@@ -3,6 +3,6 @@ Array.prototype.customDelete = function (index) {
     for (let i = index; i < this.length - 1; i++) {
         this[i] = this[i + 1];
     }
-    this.length -= 1; // Remove space for removed element
+    this.length--; // Remove space for removed element
     return this;
 }
