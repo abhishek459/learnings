@@ -1,4 +1,4 @@
-Array.prototype.customDelete = function (index) {
+Array.prototype.deleteAt = function (index) {
     if (index >= this.length || index < 0) throw 'Index out of bounds';
     for (let i = index; i < this.length - 1; i++) {
         this[i] = this[i + 1];
