@@ -84,7 +84,21 @@ function intersectSortedArrays(array1, array2) {
 
 // Difference of Two Arrays (A-B)
 function arrayDifference(array1, array2) {
-
+    if (!Array.isArray(array1) || !Array.isArray(array2)) throw 'Please provide 2 Arrays as arguments to this function';
+    let differenceArray = [];
+    for (let i = 0; i < array1.length; i++) {
+        const element = array1[i];
+        let elementMatched = false;
+        for (let j = 0; j < array2.length; j++) {
+            if (element === array2[j]) {
+                elementMatched = true;
+            }
+        }
+        if (!elementMatched) {
+            differenceArray.push(element);
+        }
+    }
+    return differenceArray;
 }
 
 function sortedArrayDifference(array1, array2) {
