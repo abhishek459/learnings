@@ -5,3 +5,12 @@ Tail Recursion
 
 Head Recursion
 - When a recursive function is calling itself in its first statement, it is called head recursion. All operations will be performed at the returning time of the function call. Converting this into a loop is a bit trickier than converting tail recursions into loop.
+
+Tree Recursion
+- When a function is calling itself recursively more than one times, is known as tree recursion.
+
+Indirect Recursion
+- If a function A is calling B which is calling C which calls A, then that is an Indirect Recursion. Function A calling B and B calling A is also the same.
+
+Nested Recursion
+- When a function calls itself by passing parameter as a function calling itself. A is a function then A(A(n-1)) inside A is a nested recursion.
