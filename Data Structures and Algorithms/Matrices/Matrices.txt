@@ -22,3 +22,7 @@ Lower Triangular Matrix:
 - Row index must be greater than or equal to column index for non-zero elements
 - Number of non-zero elements equal to n(n+1)/2 because its equal to (1 + 2 + 3 ... + n) 
 - Number of zero elements equal to n^2 - n(n+1)/2
+- Formula to access an element of this matrix stored in a linear array is if i >= j then M[i][j] = A[i * (i-1) / 2 + j]
+    where i is the row number, j is the column number
+    The i * (i-1) / 2 calculates the total number of elements in all the rows above row i (excluding row i itself).
+    j simply points to the specific element within row i.
