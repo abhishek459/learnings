@@ -1,0 +1,24 @@
+- Matrices are n*n arrays, that is they are square matrices. They are more like to have more number of '0' elements than a regular array.
+- There are n^2 elements in a matrix
+
+These are some types of matrices:
+- Diagonal Matrix
+- Lower Triangular Matrix
+- Upper Triangular Matrix
+- Symmetric Matrix
+- Tridiagonal Matrix
+- Band Matrix
+- Toeplitz Matrix
+- Sparse Matrix
+
+Diagonal Matrix:
+- Only diagonal elements are non-zero
+- Number of non-zero elements equal to n.
+- Number of zero elements are n^2 - n.
+
+Lower Triangular Matrix:
+- Non-zero elements occupy the lower triangular area of the matrix, that is on and below the diagonal.
+- Row (Vertical) index must be less than column (Horizontal) index for zero elements
+- Row index must be greater than or equal to column index for non-zero elements
+- Number of non-zero elements equal to n(n+1)/2 because its equal to (1 + 2 + 3 ... + n) 
+- Number of zero elements equal to n^2 - n(n+1)/2
