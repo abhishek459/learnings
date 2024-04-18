@@ -1,16 +1,25 @@
 Recursion has ascending and descending phase, whereas a loop only has ascending phase. That is with each iteration we can perform an operation in loop, whereas in recursion we can perform an operation before and after the recursive call.
 
 Tail Recursion
-- When a recursive function is calling itself as its last calling statement then it is called Tail Recursion. This means, all the operations will be performed at calling time of the function. Remember that the last statement cannot have any statement after the function call. Even in f(n-1) + 1 is not a tail recursion because it is adding 1 after the function is called. If you have to write tail recursion, better convert it into a loop as its more efficient in terms of space. Some compilers will check for tail recursions in your code and convert it into loop.
+- When a recursive function is calling itself as its last calling statement then it is called Tail Recursion.
+- This means, all the operations will be performed at calling time of the function.
+- Remember that the last statement cannot have any statement after the function call. 
+- Even in f(n-1) + 1 is not a tail recursion because it is adding 1 after the function is called.
+- If you have to write tail recursion, better convert it into a loop as its more efficient in terms of space.
+- Some compilers will check for tail recursions in your code and convert it into loop.
 
 Head Recursion
-- When a recursive function is calling itself in its first statement, it is called head recursion. All operations will be performed at the returning time of the function call. Converting this into a loop is a bit trickier than converting tail recursions into loop.
+- When a recursive function is calling itself in its first statement, it is called head recursion.
+- All operations will be performed at the returning time of the function call.
+- Converting this into a loop is a bit trickier than converting tail recursions into loop.
 
 Tree Recursion
 - When a function is calling itself recursively more than one times, is known as tree recursion.
 
 Indirect Recursion
-- If a function A is calling B which is calling C which calls A, then that is an Indirect Recursion. Function A calling B and B calling A is also the same.
+- If a function A is calling B which is calling C which calls A, then that is an Indirect Recursion.
+- Function A calling B and B calling A is also the same.
 
 Nested Recursion
-- When a function calls itself by passing parameter as a function calling itself. A is a function then A(A(n-1)) inside A is a nested recursion.
+- When a function calls itself by passing parameter as a function calling itself.
+- A is a function then A(A(n-1)) inside A is a nested recursion.
