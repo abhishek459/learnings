@@ -15,6 +15,7 @@ Diagonal Matrix:
 - Only diagonal elements are non-zero
 - Number of non-zero elements equal to n.
 - Number of zero elements are n^2 - n.
+- Used in image processing, for efficient multiplication of diagonal matrix with each pixel, to adjust its saturation/brightness/etc.
 
 Lower Triangular Matrix:
 - Non-zero elements occupy the lower triangular area of the matrix, that is on and below the diagonal.
@@ -26,3 +27,20 @@ Lower Triangular Matrix:
     where i is the row number, j is the column number
     The i * (i-1) / 2 calculates the total number of elements in all the rows above row i (excluding row i itself).
     j simply points to the specific element within row i.
+- Used in solving Systems of Linear Equations, Finite Element Analysis, Cholesky Decomposition, etc.
+
+Upper Triangular Matrix:
+- Upper half of the matrix including the diagonal contains non-zero elements.
+- Row index must be greater than or equal to column index for zero elements.
+- Number of non-zero elements is n(n-1)/2 and number of zero elements is n(n+1)/2
+- Formula to access an element of this matrix stored in a linear array is if i <= j then M[i][j] = A[((i-1)n - (i-2)(i-1)/2) + (j - i)]
+
+Symmetric Matrix:
+- If M[i,j] = M[j,i] then it is a Symmetric matrix.
+- To store a symmetric matrix efficiently, you just need to store the lower/upper triangular region using which you can figure out the other half.
+
+Tridiagonal Matrix:
+- Non-zero elements are present in the main diagonal, lower and upper diagonal.
+- So main diagonal is when i-j=0, lower diagonal is when i-j=1 and upper diagonal is when i-j=-1
+- So M[i,j] must be non-zero if |i-j| <= 1 and it must be zero if |i-j| > 1
+- 3n-2 non-zero elements are there and n^2 - 3n-2 zero elements are there.
