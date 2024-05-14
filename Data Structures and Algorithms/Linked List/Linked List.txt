@@ -1,0 +1,4 @@
+Linked List is a collection of nodes, where each node contains data and a pointer to the next node.
+
+"Head" or "First" is a pointer pointing to first element of a Linked List.
+
