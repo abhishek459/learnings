@@ -1,0 +1,15 @@
+A stack is like a pile of plates. You can only add or remove plates from the top. This is why it's called "Last In, First Out" (LIFO)
+- The last plate you put on is the first one you can take off.
+- The element goes one direction for insertion and opposite direction for removal.
+
+Stack Operations:
+1) Push - Inserting an element into stack
+2) Pop - Removing the last inserted element from the stack
+3) Peek - Looking at a particular index of a stack
+4) StackTop - Knowing the topmost value of a stack
+5) isEmpty - Knowing whether the stack is empty
+6) isFull - Knowing whether the stack is full
+
+Stack Creation:
+- Fixed size of array
+- Top pointer to point to the top most element
