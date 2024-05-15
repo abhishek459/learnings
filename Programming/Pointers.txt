@@ -1,0 +1,10 @@
+- Pointer is an address variable that is meant for storing the address of data and not the data itself.
+- Programs can't access heap memory directly, but they can request memory allocation on the heap. This request is done through special functions provided by the programming language or operating system, and pointers are used to store the memory addresses returned by these functions.
+- A pointer is used to access resources outside the program.
+- They are also used for parameter passing
+- Declaration: int *p; Initialization: p = &a; Dereferencing: printf("%d",*p);
+
+malloc is used in C to assign memory in heap.
+- p = (int *)malloc(5 * sizeof(int));
+- malloc returns void pointer so we type cast it to int.
+- In C++ we do it like: p = new int[5];
