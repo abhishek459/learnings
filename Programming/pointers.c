@@ -11,5 +11,10 @@ int main() {
     *p = 20; // Modifies the data at address of variable a to 20
     printf("%d", a); // Prints 20
 
+    int A[5] = {2,4,6,8,10};
+    int *p2;
+    p2 = A; // This can also be declared as p2 = &A[0]
+    
+
     return 0;
 }
