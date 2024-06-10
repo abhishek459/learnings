@@ -14,7 +14,10 @@ int main() {
     int A[5] = {2,4,6,8,10};
     int *p2;
     p2 = A; // This can also be declared as p2 = &A[0]
-    
+
+    for (int i = 0; i < 5; i++) {
+        printf("\n%d", *p2[i]);
+    }
 
     return 0;
 }
