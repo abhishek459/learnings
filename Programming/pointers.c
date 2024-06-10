@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 int main() {
     int a = 10;
@@ -17,6 +18,14 @@ int main() {
 
     for (int i = 0; i < 5; i++) {
         printf("\n%d", *p2[i]);
+    }
+
+    int *p3;
+    p3 = (int *)malloc(5 * sizeof(int));
+    p3[0] = 10; p3[1] = 20; p3[2] = 30; p3[3] = 40; p3[4] = 50;
+
+    for (int i = 0; i < 5; i++) {
+        printf("\n%d", p3[i]);
     }
 
     return 0;
