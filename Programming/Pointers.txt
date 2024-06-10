@@ -3,6 +3,7 @@
 - A pointer is used to access resources outside the program.
 - They are also used for parameter passing
 - Declaration: int *p; Initialization: p = &a; Dereferencing: printf("%d",*p);
+- Memory size consumed by a pointer is of same size independent of the data it references.
 
 malloc is used in C to assign memory in heap.
 - p = (int *)malloc(5 * sizeof(int));
