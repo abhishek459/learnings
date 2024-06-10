@@ -1,3 +1,0 @@
-- Reference is a nick name or an alias given to a variable and is only available in C++
-- It is declared using & before the variable name. int a = 10; int &r = a;
-- It is mainly used for parameter passing.

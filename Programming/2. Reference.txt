@@ -1,0 +1,9 @@
+- Reference is a nick name or an alias given to a variable and is only available in C++
+- It is declared using & before the variable name. int a = 10; int &r = a;
+- It is mainly used for parameter passing.
+
+Difference between pointers and reference:
+1) Pointer stores the memory address of another variable whereas reference stores the reference to another variable
+2) Pointers can be null but references must be initialized with a variable
+3) Pointers can be reassigned to point to a different variable but a reference cannot be reassigned to a different variable
+4) Pointers requires separate memory allocation whereas a Reference shares the memory of the original variable
