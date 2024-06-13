@@ -1,17 +1,19 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+// Declare a struct for representing a linked list
 struct Node {
     int data;
     struct Node *next;
 }*first = NULL;
 
+// Create a linked list using an array of elements
 void create(int A[], int n) {
     int i = 0;
     struct Node *t,*last;
     first=(struct Node *)malloc(sizeof(struct Node));
-    first->data=A[0];
-    first->next=NULL;
+    first->data=A[0]; // You can access a struct pointer's struct data using (*first).data as well!
+    first->next=NULL; // -> is used due to its easy syntax.
     last=first;
     
     for (i=1;i<n;i++) {
@@ -23,10 +25,19 @@ void create(int A[], int n) {
     }
 }
 
-void Display(struct Node *p) {
+// Display linked list elements iteratively
+void display(struct Node *p) {
     while(p!=NULL) {
         printf("\n%d", p->data);
         p=p->next;
+    }
+}
+
+// Display linked list elements recursively
+void recursiveDisplay(struct Node *p) {
+    if (p!=NULL) {
+        printf("\n%d", p->data);
+        recursiveDisplay(p->next);
     }
 }
 
@@ -35,7 +46,9 @@ int main() {
     
     create(A,5);
     
-    Display(first);
+    display(first);
+
+    recursiveDisplay(first);
     
     return 0;
 }
