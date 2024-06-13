@@ -1,4 +1,6 @@
-Linked List is a collection of nodes, where each node contains data and a pointer to the next node.
-
-"Head" or "First" is a pointer pointing to first element of a Linked List.
-
+- Linked List is a collection of nodes, where each node contains data and a pointer to the next node.
+- "Head" or "First" is a pointer pointing to first element of a Linked List.
+- Node is created using Struct in C. The Struct holds data of type int, float, etc. and a pointer to itself (Self-Referential)
+- To check if a pointer is not pointing to a node we check 3 conditions in an if statement - 1) P == NULL; 2) P == 0; 3) !P
+- To check if a pointer is pointing to a node we check 3 condtions in an if statement - 1) P != NULL; 2) P != 0; 3) P
+- To traverse a linked list we use while loop with the condition (P != NULL) we keep on assigning P=>Next value to our traversing pointer
