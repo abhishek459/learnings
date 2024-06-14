@@ -45,3 +45,63 @@ int calculateSumRecursively(struct Node *p) {
         return 0;
     }
 }
+
+// Get the max element in a linked list iteratively
+int max(struct Node *p) {
+    int max=INT32_MIN;
+
+    while(p) {
+        if (p->data > max)
+            max = p->data;
+        p=p->next;
+    }
+
+    return max;
+}
+
+// Get the max element in a linked list recursively
+int maxRecursive(struct Node *p) {
+    int x = 0;
+    if (p==NULL) {
+        return INT32_MIN;
+    } else {
+        x = maxRecursive(p->next);
+        if (x>p->data)
+            return x;
+        return p->data;
+    }
+}
+
+struct Node* linearSearch(struct Node *p, int number) {
+    while (p) {
+        if (p->data == number)
+            return p;
+        p=p->next;
+    }
+    return NULL;
+}
+
+struct Node* linearSearchRecursive(struct Node *p, int number) {
+    if (p==NULL) {
+        return NULL;
+    } else {
+        if (p->data == number) {
+            return p;
+        } else {
+            return linearSearchRecursive(p->next, number);
+        }
+    }
+}
+
+struct Node* linearSearchWithMoveToHead(struct Node *p, int number) {
+    struct Node *q;
+    while (p != NULL) {
+        if (p->data == number) {
+            q->next = p->next;
+            p->next = first;
+            first=p;
+        }
+        q=p;
+        p=p->next;
+    }
+}
