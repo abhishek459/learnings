@@ -3,4 +3,18 @@
 - Node is created using Struct in C. The Struct holds data of type int, float, etc. and a pointer to itself (Self-Referential)
 - To check if a pointer is not pointing to a node we check 3 conditions in an if statement - 1) P == NULL; 2) P == 0; 3) !P
 - To check if a pointer is pointing to a node we check 3 condtions in an if statement - 1) P != NULL; 2) P != 0; 3) P
-- To traverse a linked list we use while loop with the condition (P != NULL) we keep on assigning P=>Next value to our traversing pointer
+- To traverse a linked list we use while loop with the condition (P != NULL) we keep on assigning P=>Next value to our traversing pointer.
+- Pointes which are meant for accessing linked list elements are called pointers and the pointers that are holding the next node's address are known as links.
+- When inserting into a linked list there are 2 scenarios: 1) Inserting before first and 2) Inserting anywhere after first.
+
+Real World Use Cases:
+- Music Playlist: Imagine your music player. Songs are like nodes in a linked list, each containing the song information and a pointer to the next song. This lets you play songs sequentially.
+- Image Viewer: Think of a photo gallery app. Images can be linked nodes, where "next" points to the following image, allowing you to navigate through them.
+- Web Browser History: Your browsing history acts like a linked list. Each visited website is a node, linked to the previous and next pages you visited, enabling you to use the back and forward buttons.
+- Undo/Redo Functionality: Many software programs, like text editors, use linked lists to track changes. Each edit creates a new node, allowing you to undo or redo actions by moving through the list.
+
+Programming Use Cases:
+- Stacks and Queues: These essential structures are often implemented using linked lists. Stacks (like "undo/redo") follow a LIFO (Last-In-First-Out) principle, while Queues (like a waiting line) operate on a FIFO (First-In-First-Out) basis.
+- Dynamic Data Management: Unlike arrays with fixed sizes, linked lists can grow or shrink as needed. This makes them ideal for situations where data size is unpredictable.
+- Implementing Trees and Graphs: These more complex structures often rely on linked lists to connect nodes and represent hierarchical relationships.
+- Caching: Linked lists can be used in Least Recently Used (LRU) caches where the most recently accessed items are moved to the front for faster retrieval.
