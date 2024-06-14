@@ -13,6 +13,7 @@ int countLength(struct Node *p) {
         count++;
         p=p->next;
     }
+    return count;
 }
 
 // Count length of a linked list recursively
