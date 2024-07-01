@@ -44,35 +44,42 @@ int countLength(struct Node *p) {
     return count;
 }
 
-int delete(struct Node *p, int index) {
-    if (index < 1 || index > countLength(p)) return -1;
-
-    struct Node *q=NULL;
-    int x = -1, i;
-
-    if (index == 1) {
-        q = first; // Store first's address to delete it later
-        x = first->data;
-        first = first->next; // Point first to the next node of the first node as this one will be deleted
-        free(q);
-        return x;
-    } else {
-        for (i=0;i<index-1;i++) {
-            q=p;
+void isSorted(struct Node *p) {
+    if (p==NULL) return;
+    int x = p->data;
+    while (p != NULL) {
+        if (p->data < x) {
+            printf("\nThis linked list is not sorted");
+            return;
+        } else {
+            x=p->data;
             p=p->next;
         }
-        q->next = p->next; // Set previous node's next value to current node's next value
-        x = p->data; // Extract data from the node that is to be deleted
-        free(p);
-        return x;
+    }
+    printf("\nThis linked list is sorted");
+}
+
+void removeDuplicates(struct Node *p) {
+    if (p==NULL || p->next==NULL) return;
+    struct Node *q = p->next;
+    while (q != NULL) {
+        if (p->data == q->data) {
+            p->next = q->next;
+            free(q);
+            q=p->next;
+        } else {
+            p=q;
+            q=q->next;
+        }
     }
 }
 
 int main() {
-    int A[] = {10,20,30,40,50};
+    int A[] = {10,10,30,30,50};
     create(A,5);
     display(first);
-    printf("\nDeleted element is %d", delete(first, 3));
-    printf("\n");
+    isSorted(first);
+    removeDuplicates(first);
+    printf("\nDuplicates removed:\n");
     display(first);
 }
