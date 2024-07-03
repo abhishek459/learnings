@@ -6,6 +6,8 @@
 - To traverse a linked list we use while loop with the condition (P != NULL) we keep on assigning P=>Next value to our traversing pointer.
 - Pointes which are meant for accessing linked list elements are called pointers and the pointers that are holding the next node's address are known as links.
 - When inserting into a linked list there are 2 scenarios: 1) Inserting before first and 2) Inserting anywhere after first.
+- Linked Lists can be reversed by reversing elements where we traverse the linked list and copy the elements in an array, reverse it and copy it back. Or by reversing links.
+- We only prefer to reverse a linked list by reversing the links (using sliding pointers) as moving contents of the node is resource intensive.
 
 Real World Use Cases:
 - Music Playlist: Imagine your music player. Songs are like nodes in a linked list, each containing the song information and a pointer to the next song. This lets you play songs sequentially.
