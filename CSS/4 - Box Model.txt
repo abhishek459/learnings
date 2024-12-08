@@ -1,0 +1,5 @@
+- Box Model:  
+  1. Every HTML element is considered a box.  
+  2. Box-Sizing: Use `* { box-sizing: border-box; }` to include borders and padding within the element's total width and height (default is `content-box`, which only includes content).  
+  3. Outline: Similar to a border but does not affect layout, used for highlighting or visual feedback. It is drawn outside the border by default.  
+  4. Padding & Margins: Set using `em` (relative to the element's font size) combined with `rem` (for root font size), ensuring dynamic resizing based on the font size.

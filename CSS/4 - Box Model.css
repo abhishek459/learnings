@@ -1,0 +1,89 @@
+/* 1. Box-sizing: border-box globally */
+* {
+    box-sizing: border-box;
+}
+
+/* 2. Basic box with padding, margin, and border */
+.box {
+    width: 300px;
+    height: 200px;
+    padding: 20px;
+    margin: 30px;
+    border: 5px solid #333;
+    background-color: lightblue;
+}
+
+/* 3. Outline for highlighting without affecting layout */
+.box-outline {
+    width: 300px;
+    height: 200px;
+    padding: 20px;
+    margin: 30px;
+    border: 5px solid #333;
+    background-color: lightgreen;
+    outline: 5px dashed red;
+}
+
+/* 4. Responsive box with em and rem for padding and margin */
+.responsive-box {
+    font-size: 16px;
+    width: 20rem;
+    height: 10rem;
+    padding: 1.5em;
+    margin: 2em;
+    border: 3px solid #444;
+    background-color: lightcoral;
+}
+
+/* 5. Content-box vs border-box model */
+.content-box {
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    border: 5px solid #333;
+    background-color: lightyellow;
+    box-sizing: content-box;
+}
+
+.border-box {
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    border: 5px solid #333;
+    background-color: lightpink;
+    box-sizing: border-box;
+}
+
+/* 6. Box-sizing, margin, and padding reset globally */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 7. Container with various border, margin, and outline styles */
+.container {
+    border: 1px solid green;
+    border-width: 2px;
+    border-top-width: 3px;
+    border-style: dotted;
+    /* Initially sets all borders to dotted */
+    border-style: ridge;
+    /* Overrides previous border style */
+    border-top-style: dashed;
+    /* Specifically sets top border style */
+    border-top-left-radius: 2em;
+    /* Rounded top-left corner */
+    outline: 2rem solid black;
+    /* Outline around the container */
+    outline-style: dotted;
+    /* Dotted outline */
+    outline-offset: 1rem;
+    /* Space between the element and outline */
+    margin: 1px 2px 3px;
+    /* Top, right-left, and bottom margins */
+    margin: 1px 2px 3px 2px;
+    /* Top, right, bottom, left margins */
+    margin: 3rem auto;
+    /* Centers the container horizontally */
+}

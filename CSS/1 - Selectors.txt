@@ -1,10 +1,10 @@
-- There are 3 types of selectors in CSS:
-1) Element Selectors: body, p, h1
-2) Class Selectors: .className
-3) Id Selectors: #idName
-- You can apply styles to multiple selectors using a comma to separate them: h1, h2
-- You can apply styles to nested elements by placing selectors in order separated using space as follows: h1 h2 { font-size: 12px }. This will apply the style to the inner most element
-- '*' is a universal selector which is used very rarely, it applies styles to everything in your HTML. If you apply border to it, it will apply that border to every single element in your HTML
-- CSS renders from top to bottom, Id will take a higher priority than Class, which will take a higher priority than Element selectors
-- !important tag is something you should avoid using as a beginner because it will most likely be used as short term solution. Use it once you know well enough when it should be used.
-- 
+- CSS Selectors:  
+  1. Element: `body`, `p`, `h1`
+  2. Class: `.className`
+  3. Id: `#idName`
+
+- Multiple Selectors: Use commas to style multiple selectors (e.g., `h1, h2`).
+- Nested Elements: Use space to target nested elements (e.g., `h1 h2 { font-size: 12px }` applies to `h2` inside `h1`).
+- Universal Selector: `*` applies styles to all elements (rarely used).
+- Priority: Id > Class > Element. CSS renders top to bottom.
+- `!important`: Avoid as a beginner; use only when necessary.

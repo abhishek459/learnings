@@ -1,7 +1,7 @@
-There are a few ways to set color
-- List of color names available in HTML: blue, black, pink, etc
-- rgb(255, 0, 0) - max value is 255 and sets the red, green and blue color
-- rgba(255, 0, 0, 0.5) - where a is alpha and it sets the transparency
-- #000000 is black in hexadecimal which can be written in short as #000
-- hsl(224, 73%, 49%) stands for hue, saturation and lightness
-- Use a contrast checker to choose background and foreground colors for better user experience
+- Colors:
+  1. Color Names: `blue`, `black`, `pink`, etc.
+  2. RGB: `rgb(255, 0, 0)` (Red, Green, Blue; max 255).
+  3. RGBA: `rgba(255, 0, 0, 0.5)` (adds transparency using alpha).
+  4. Hexadecimal: `#000000` (black) or shorthand `#000`.
+  5. HSL: `hsl(224, 73%, 49%)` (Hue, Saturation, Lightness).
+  6. Contrast: Use a contrast checker for accessible background and foreground colors.
