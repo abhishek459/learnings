@@ -1,0 +1,4 @@
+- Styling Links:
+  1. Use pseudo-classes to style links: `a`, `a:visited`, `a:hover`, `a:active`.
+  2. Maintain the order: `a`, `a:visited`, `a:hover`, `a:active` for proper functionality.
+  3. Use HSL color values to find complementary link styles (e.g., hover and font color) by adjusting the hue in the VS Code color picker.

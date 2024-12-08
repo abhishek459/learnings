@@ -1,0 +1,27 @@
+/* Base link styling */
+a {
+    color: hsl(210, 60%, 50%);
+    /* Default link color */
+    text-decoration: none;
+    /* Remove underline */
+}
+
+/* Visited link styling */
+a:visited {
+    color: hsl(210, 40%, 40%);
+    /* Slightly darker color for visited links */
+}
+
+/* Hover link styling */
+a:hover {
+    color: hsl(210, 70%, 60%);
+    /* Brighter color on hover */
+    text-decoration: underline;
+    /* Underline on hover for emphasis */
+}
+
+/* Active link styling */
+a:active {
+    color: hsl(210, 80%, 45%);
+    /* Slightly adjusted hue for active state */
+}
