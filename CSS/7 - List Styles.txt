@@ -1,0 +1,9 @@
+- List Styles:
+  1. Use `list-style-type` for custom bullet styles (e.g., `circle`, `square`, `decimal`).
+  2. `<ol>` Attributes:
+     - `start` to set a starting number.
+     - `reversed` to reverse the order.
+  3. Alignment: Use `list-style-position: inside` to align bullets properly with text.
+  4. Images: Use `list-style-image` to replace bullets with images. Add a fallback with `list-style`.
+  5. Styling Items: Use `ul li:nth-child(even)` for even items or `::marker` to style markers.
+  6. Custom Values: Use the `value` attribute in `<li>` to set custom marker values. The subsequent markers will follow the value.
