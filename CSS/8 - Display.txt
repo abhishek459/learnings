@@ -1,0 +1,7 @@
+- Display:  
+  1. Block elements: Take up 100% width of their parent and are stacked vertically.  
+  2. Inline elements: Take the minimum width and stack horizontally.  
+  3. Inline elements: Cannot have margin or height; padding overlaps with other elements.  
+  4. Inline-block elements: Use `display: inline-block` to allow padding and other styles without overlapping.  
+  5. Side-by-side elements: Use `li { display: inline-block; }` to place list items side by side.  
+  6. `margin-inline`: Sets left and right margins of an element.
