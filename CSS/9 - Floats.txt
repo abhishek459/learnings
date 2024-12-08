@@ -1,0 +1,5 @@
+- Floats:
+- Floats are used to float things to left and right.
+- Usually useed to wrap text around an element.
+- Use margin-right and margin-left for float: left and float:right respectively to give proper spacing between the element and the text
+- Apply display: flow-root; to properly containerize the floated element and the wrapped text.
