@@ -1,0 +1,6 @@
+- Pixels shouldn't be used to set font sizes because it takes away the user's choice to have a larger/smaller font size.
+- Pixels are better used for borders for example or anywhere where we need a fixed size element.
+- 'rem' is the font size of the root element. 1 rem is about 16px by default, 2 rems would equal 32px.
+- 'em' is the font size of current element, it will multiply the font size with the parent element's font size. 'em' is used for setting the padding/margin of buttons or similar elements, combined with 'rem' based font sizes.
+- 'ch' stands for character where we can have 40 characters in a line using 'width: 40ch'.
+- Using '%' is more preferable than using 'vw' because % stays dynamic, whereas vw could spawn an unnecessary horizontal scrollbar at the bottom.
