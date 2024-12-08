@@ -1,4 +1,4 @@
-- Text Styling in CSS:
+- Typography:
   1. Text Decoration: `text-decoration` (e.g., underline, overline, line-through).
   2. Text Transform: `text-transform` (capitalize, lowercase, uppercase).
   3. Text Alignment: `text-align` (left, right, center, justify).
