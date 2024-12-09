@@ -1,0 +1,33 @@
+.column {
+    column-count: 4;
+    column-width: 250px;
+    columns: 4 15rem;
+    column-rule: 3px solid #333;
+    column-gap: 5rem;
+    font-size: 1.2rem;
+}
+
+.column p {
+    margin-top: 0;
+}
+
+.column h2 {
+    background-color: bisque;
+    padding: 1rem;
+    margin-top: 0;
+    break-inside: avoid;
+    /* Prevents weird behaviour of an element splitting between columns */
+    break-before: column;
+    /* Forces a column break */
+}
+
+.column .quote {
+    font-size: 3rem;
+    text-align: center;
+    column-span: all;
+    margin-top: 2rem;
+}
+
+.nowrap {
+    white-space: nowrap;
+}

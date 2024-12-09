@@ -1,0 +1,7 @@
+- Columns:  
+  - `column-count`: Splits an element into a specified number of columns.  
+  - `column-width`: Sets the minimum width of a column.  
+  - `column-gap`: Sets spacing between columns.  
+  - `column-rule`: Adds a divider (e.g., `3px solid #333`) between columns.  
+  - Prevent splitting: Use `break-inside: avoid;` and `break-before: column;`.  
+  - Span all columns: Use `column-span: all;`.  
