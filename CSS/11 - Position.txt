@@ -1,0 +1,9 @@
+- Position:
+  - Use `top`, `left`, `right`, and `bottom` for positioning absolute elements.
+  - Default `position`: `static`.
+  - `absolute`: Ignores DOM flow and positions based on `top`, `bottom`, `left`, `right`.
+  - `relative`: Keeps absolute children within its boundaries. If multiple relative elements exist, the absolute element respects the nearest ancestor's boundaries.
+  - `fixed`: Ignores DOM and stays fixed at specified position.
+  - `sticky`: Sticks to the screen until its parent is out of view.
+  - Default stacking order: Controlled by the order of elements in the HTML.
+  - `z-index`: Overrides default stacking; higher values bring elements to the front.
