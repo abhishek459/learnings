@@ -1,0 +1,11 @@
+- Flexbox:
+  - `display: flex`: Stacks children beside each other as columns by default.
+  - `justify-content`: Aligns flex children horizontally.
+  - `align-items`: Aligns flex children vertically.
+  - `flex-direction`: Controls stacking as `row` or `column` (default: column).
+  - `gap`: Sets spacing between elements.
+  - `flex-grow` & `flex-shrink`: Control growth/shrinkage of flex items relative to others.
+  - `flex-basis`: Sets minimum width/height but allows growth if space permits (e.g., `flex-basis: 200px`).
+  - `flex-wrap: wrap`: Wraps flex items to the next line when exceeding bounds.
+  - `flex`: Shorthand for `flex-grow`, `flex-shrink`, and `flex-basis` (e.g., `flex: 1 1 250px`).
+  - `order`: Controls the order of flex items (e.g., `order: -1`).

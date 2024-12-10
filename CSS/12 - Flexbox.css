@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 80vh;
+    width: 80vw;
+    margin: 10vh auto;
+    background-color: black;
+    color: white;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-flow: row nowrap;
+}
+
+.box {
+    height: 10vw;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 100px;
+}
+
+.box:nth-child(2) {
+    flex: 2 2 100px;
+    order: 0;
+}
