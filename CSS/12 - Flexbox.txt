@@ -9,3 +9,4 @@
   - `flex-wrap: wrap`: Wraps flex items to the next line when exceeding bounds.
   - `flex`: Shorthand for `flex-grow`, `flex-shrink`, and `flex-basis` (e.g., `flex: 1 1 250px`).
   - `order`: Controls the order of flex items (e.g., `order: -1`).
+  - Visit https://flexboxfroggy.com/ to practice these concepts.
