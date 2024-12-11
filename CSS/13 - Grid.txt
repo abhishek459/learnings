@@ -9,3 +9,4 @@
   - `place-content: center`: Aligns content both vertically and horizontally.
   - `grid-area`: Assigns area names to grid items for use in `grid-template-areas`.
   - `grid-template-areas`: Maps grid items to layout using area names.
+  - Visit https://cssgridgarden.com/ to practice these concepts.
