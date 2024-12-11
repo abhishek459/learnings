@@ -1,0 +1,11 @@
+- Grid:
+  - `display: grid`: Declares a grid layout.
+  - `grid-auto-flow`: Controls item flow as `row` or `column`; all items have equal width/height.
+  - `grid-template-columns`: Defines column widths in fractions (commonly used in grids) e.g., `2fr 1fr 1fr` creates three columns.
+  - `repeat`: Repeats a pattern (e.g., `grid-template-columns: repeat(2, 1fr 2fr);` creates 4 columns with alternating widths).
+  - `grid-auto-rows`: Sets fixed height (`150px`) or range (`minmax(min, max)`) for rows.
+  - `row-gap` & `column-gap`: Add gaps between rows and columns.
+  - `grid-column-start` & `grid-column-end`: Span items across columns (e.g., `1-4` spans 3 columns).
+  - `place-content: center`: Aligns content both vertically and horizontally.
+  - `grid-area`: Assigns area names to grid items for use in `grid-template-areas`.
+  - `grid-template-areas`: Maps grid items to layout using area names.
