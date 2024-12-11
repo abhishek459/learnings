@@ -1,0 +1,10 @@
+- Images:
+  - Set `width` and `height` in `<img>` for fallback if CSS fails.
+  - Use `width: %` and `height: auto` for responsiveness.
+  - `display: block`: Removes extra padding at the bottom of the image.
+  - `background-repeat`: Controls repetition (`no-repeat`, `repeat-y`, `repeat-x`).
+  - `background-size`: Defines how the image scales.
+  - `background-position`: Determines the displayed part of the image.
+  - Add a filter with a semi-transparent background color using a div inside the div with a background-image.
+  - Use multiple backgrounds with `background-image: url(), linear-gradient(to left, steelblue, white)`.
+  - Clip image inside text using `-webkit-background-clip: text` and `color: hsla(0, 0%, 0%, 0.2)`.

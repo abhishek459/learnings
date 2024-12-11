@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nowrap {
+    white-space: nowrap;
+}
+
+.offscreen {
+    position: absolute;
+    left: -10000px;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    min-height: 100vh;
+    /* background-image: url('./images/background-white.jpg'), linear-gradient(to left, steelblue, white);
+    background-repeat: no-repeat, no-repeat;
+    background-size: cover, contain; */
+}
+
+img {
+    display: block;
+}
+
+.example {
+    margin: 1rem;
+    border: 1em solid red;
+}
+
+.example img {
+    width: 25%;
+    height: auto;
+}
+
+.profile-pic-figure {
+    width: 35%;
+}
+
+.profile-pic-figure img {
+    width: 100%;
+    height: auto;
+    min-width: 5rem;
+    border: 5px double gray;
+    border-radius: 50%;
+}
+
+.hero {
+    border-bottom: 2px solid black;
+    padding: 2em;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 3rem;
+    background-color: hsla(0, 0%, 0%, 0.403);
+}
+
+.container {
+    background-image: url('./images/background-white.jpg');
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+
+h1 {
+    font-size: 3rem;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+}
+
+.clip {
+    height: 100vh;
+    font-weight: 800;
+    font-size: 7rem;
+    text-align: center;
+    background-image: url('./images/background.jpg');
+    background-position: left;
+    text-transform: uppercase;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: hsla(0, 0%, 0%, 0.200);
+}
