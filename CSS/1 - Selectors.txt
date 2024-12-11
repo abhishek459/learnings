@@ -5,6 +5,6 @@
 
 - Multiple Selectors: Use commas to style multiple selectors (e.g., `h1, h2`).
 - Nested Elements: Use space to target nested elements (e.g., `h1 h2 { font-size: 12px }` applies to `h2` inside `h1`).
-- Universal Selector: `*` applies styles to all elements (rarely used).
+- Universal Selector: `*` applies styles to all elements (commonly used for resetting margin/padding and setting box-sizing).
 - Priority: Id > Class > Element. CSS renders top to bottom.
 - `!important`: Avoid as a beginner; use only when necessary.

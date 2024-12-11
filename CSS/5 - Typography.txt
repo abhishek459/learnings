@@ -2,7 +2,7 @@
   1. Text Decoration: `text-decoration` (e.g., underline, overline, line-through).
   2. Text Transform: `text-transform` (capitalize, lowercase, uppercase).
   3. Text Alignment: `text-align` (left, right, center, justify).
-  4. Text Indentation: `text-indent` (adds indentation to the first line of a paragraph).
+  4. Text Indentation: `text-indent` (adds indentation before the first word of a paragraph).
   5. Line Height: `line-height` (improves readability; recommended value: 1.4–1.5).
   6. Spacing: `letter-spacing` (space between letters) and `word-spacing` (space between words).
   7. Fonts: Use web-safe fonts or include external fonts via `@import` or `<link>`.
